@@ -1,0 +1,63 @@
+.containerMain{
+    background-image: url("../images/fondo-pag-speciali.jpg");
+    background-position: bottom;
+    padding: 20px 100px;     
+    padding-top: 50px;
+    
+    h2{
+        margin-left:20px;
+        color:$titleColor;
+        text-transform: uppercase;
+    }
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            position: relative;
+            margin: 20px;
+            width: calc(100% / 3 - 40px);
+            img{
+                width: 100%;
+            }
+            
+            &:hover .overlay-box{
+                display: block;
+            }
+            .overlay-box{
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0%;
+                background-color: $titleColor;
+                opacity: 0.6;
+                text-align: center;
+                padding:80px 100px;
+                
+                a{
+                    text-decoration: none;
+
+                    span{
+                        text-transform: uppercase;
+                        color:#fff;
+                        font-size: 30px;
+                    }
+                }
+                .icon-svg{
+                    position: absolute;
+                    top:60%;
+                    left:50%;
+                    transform: translate(-50%);
+                    width: 40px;
+                    color:grey;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+          
+        }
+    }
+}

@@ -1,0 +1,33 @@
+header{
+    background-color: #fff;
+    .header-logo{
+        text-align: center;
+        padding: 50px;
+     
+        img{
+            height: 150px;
+        }
+    }
+
+    .header-nav{
+        text-align: center;
+        ul{
+            padding: 19px 0;
+            li{
+                display: inline;
+                padding: 20px;
+                font-size: 30px;
+                font-weight: bold;
+                a{
+                    color:#000;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        
+        .active{
+            background-color: $mainColor;
+        }
+    }
+}
