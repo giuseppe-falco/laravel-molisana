@@ -3,9 +3,14 @@
 
 
 @section('mainContent')
-    
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+        <h1>PAGINA HOME</h1>
         {{-- main --}}
-            <div class="containerMain">
+            {{-- <div class="containerMain">
                 @if (!empty($lunga))
                     <h2>LE LUNGHE</h2>
                     <ul>
@@ -32,7 +37,7 @@
                         @endforeach
                     </ul>
                 @endif
-            </div>
+            </div> --}}
         {{-- /main --}}
 
 @endsection
